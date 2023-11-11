@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "33d0b281-2567-4421-9749-918343e7250b",
+		"name": "Sprint 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30198104",
+		"_collection_link": "https://interstellar-crescent-880868.postman.co/workspace/LosEruditos~c0218cf6-3548-48c1-ab9d-d1bf892aea3e/collection/30198104-33d0b281-2567-4421-9749-918343e7250b?action=share&source=collection_link&creator=30198104"
+	},
+	"item": [
+		{
+			"name": "ArticuloManufacturado (Producto)",
+			"item": [
+				{
+					"name": "GETALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/ArticuloManufacturado/paged?page=0&size=5&sort=id,asc",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ArticuloManufacturado",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/ArticuloManufacturado/1",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ArticuloManufacturado",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"denominacion\": \"Pizza222222\",\r\n    \"descripcion\": \"Muy rica22222222\",\r\n    \"tiempoEstimadoCocina\": 155,\r\n    \"precioVenta\": 35500.00,\r\n    \"costo\": 25500.00,\r\n    \"urlImagen\": \"https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b\",\r\n    \"receta\": \"Paso 1\\nFormar una corona con toda la harina en la mesada de trabajo. Colocar en la parte externa de la misma la sal.\\nPaso 2\\nEn el centro incorporar la levadura y parte del agua, comenzar a mezclar tratando de no mezclar la sal con la levadura. Incorporar el resto del agua, y por último añadir el aceite. Amasar hasta lograr una masa uniforme.  Tapar y dejar descansar la masa unos 15 a 20 minutos.\\nPaso 3\\nCortar el tamaño de piezas deseado y dar forma de bollo. Tapar y dejar levar hasta duplicar el volumen.\\nPaso 4\\nColocar en placas previamente aceitadas y estirar a mano dándole el formato según el producto a realizar.\\nPaso 5\\nCocinar a una temperatura de 200° hasta que el disco tome color dorado en la base. Retirar del horno y esparcir el relleno deseado. Finalizar la cocción.\",\r\n    \"fechaAlta\": \"2023-03-01T23:04:34.384+00:00\",\r\n    \"fechaModificacion\": null,\r\n    \"fechaBaja\": null,\r\n    \"rubroArticuloManufacturado\": {\r\n        \"id\": 1,\r\n        \"denominacion\": \"Hamburguesas\",\r\n        \"fechaAlta\": \"2023-03-01T23:04:34.384+00:00\",\r\n        \"fechaModificacion\": null,\r\n        \"fechaBaja\": null\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/ArticuloManufacturado",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ArticuloManufacturado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"denominacion\": \"UPDATEUPDATEUPDATEUPDATE\",\r\n    \"descripcion\": \"Muy ricaUPDATE\",\r\n    \"tiempoEstimadoCocina\": 155,\r\n    \"precioVenta\": 35500.00,\r\n    \"costo\": 25500.00,\r\n    \"urlImagen\": \"https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b\",\r\n    \"receta\": \"Paso 1\\nFormar una corona con toda la harina en la mesada de trabajo. Colocar en la parte externa de la misma la sal.\\nPaso 2\\nEn el centro incorporar la levadura y parte del agua, comenzar a mezclar tratando de no mezclar la sal con la levadura. Incorporar el resto del agua, y por último añadir el aceite. Amasar hasta lograr una masa uniforme.  Tapar y dejar descansar la masa unos 15 a 20 minutos.\\nPaso 3\\nCortar el tamaño de piezas deseado y dar forma de bollo. Tapar y dejar levar hasta duplicar el volumen.\\nPaso 4\\nColocar en placas previamente aceitadas y estirar a mano dándole el formato según el producto a realizar.\\nPaso 5\\nCocinar a una temperatura de 200° hasta que el disco tome color dorado en la base. Retirar del horno y esparcir el relleno deseado. Finalizar la cocción.\",\r\n    \"fechaAlta\": \"2023-03-01T23:04:34.384+00:00\",\r\n    \"fechaModificacion\": null,\r\n    \"fechaBaja\": null,\r\n    \"rubroArticuloManufacturado\": {\r\n        \"id\": 1,\r\n        \"denominacion\": \"Hamburguesas\",\r\n        \"fechaAlta\": \"2023-03-01T23:04:34.384+00:00\",\r\n        \"fechaModificacion\": null,\r\n        \"fechaBaja\": null\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/ArticuloManufacturado/2",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ArticuloManufacturado",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/ArticuloManufacturado/3",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"ArticuloManufacturado",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "GETALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/Usuario/paged?page=0&size=5&sort=id,asc",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Usuario",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GETONE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/Usuario/1",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Usuario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"auth0Id\": \"200\",\r\n    \"username\": \"crisflores02213123\",\r\n    \"fechaAlta\": \"2023-03-01T23:11:02.013+00:00\",\r\n    \"fechaModificacion\": null,\r\n    \"fechaBaja\": null\r\n}"
+						},
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/Usuario",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"auth0Id\": \"2060\",\r\n    \"username\": \"crisfl123123ores02\",\r\n    \"fechaAlta\": \"2023-01-01T23:11:02.013+00:00\",\r\n    \"fechaModificacion\": null,\r\n    \"fechaBaja\": null\r\n}"
+						},
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/Usuario/3",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Usuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sprint-4-loseruditos.onrender.com/api/v1/Usuario/2",
+							"protocol": "http",
+							"host": [
+								"sprint-4-loseruditos.onrender.com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Usuario",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

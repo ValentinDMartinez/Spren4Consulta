@@ -1,0 +1,13 @@
+URL de GitHub grupal Sprint 4:
+
+https://github.com/NicoBerducci/LosEruditos-Backend
+
+
+URL de Jira grupal:
+
+https://nicoberducci.atlassian.net/jira/software/projects/EBS/boards/1
+
+
+URL del Render:
+
+https://sprint-4-loseruditos.onrender.com
